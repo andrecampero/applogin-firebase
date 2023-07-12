@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+
+        <ion-buttons slot="start">
+        <ion-menu-button color="primary"></ion-menu-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        
+        <ion-row>
+            <ion-col><h4>Login OK</h4></ion-col>
+        </ion-row>
+                
+        <ion-row>
+            <ion-col><p>Hola {{user}}</p></ion-col>
+        </ion-row>
+        
+        <ion-row>
+            <ion-col>
+                <ion-button expand="block" (click)="logOut()">Logout</ion-button>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>
+  
