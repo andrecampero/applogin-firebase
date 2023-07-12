@@ -22,7 +22,7 @@ export class AuthService {
   
     const data = {"email":email,"password":password,"returnSecureToken":true};
 
-    return this.http.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDDGnvFgNJqWAcC8K1IpdmHt4x9ahU7frg',data, options)
+    return this.http.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=api_key',data, options)
     .pipe(
       map((response: Response) => JSON.stringify(response))
     );
